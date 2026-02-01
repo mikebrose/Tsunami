@@ -1,0 +1,22 @@
+// .vscode/tasks.json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile code",
+      "type": "shell",
+      "command": "gfortran",
+      "args": [
+        "-g",
+        "tsunami.f90",
+        "-o",
+        "build/tsunami.bin"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
