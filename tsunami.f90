@@ -27,6 +27,7 @@ program tsunami
 
     ! Set initial water height
     call set_gaussian(h, icenter, decay)
+    u = 0
 
     print *, 0, h
     time_loop: do n = 1, num_time_steps        
